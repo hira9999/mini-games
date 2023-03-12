@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import './index.css'
+import Index from './pages'
 import Memory from './pages/Memory'
 import WordlePage from './pages/WordlePage'
 
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     children: [
+      {
+        path: '/',
+        element: <Index />,
+      },
       {
         path: 'wordle',
         element: <WordlePage />,
