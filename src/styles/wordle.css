@@ -1,0 +1,101 @@
+.App-module__wordle {
+  min-width: 480px;
+}
+
+.grid {
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  font-weight: medium;
+}
+
+.row > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 3px soild;
+  font-weight: bolder;
+  font-size: 2em;
+  margin: 3px;
+  background-color: grey;
+  text-transform: uppercase;
+}
+
+.row > div.green {
+  background-color: #548d4e;
+}
+
+.row > div.grey {
+  background-color: #3a3a3c;
+}
+
+.row > div.yellow {
+  background-color: #b59f3a;
+}
+
+.Keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1em;
+  font-weight: bold;
+  margin: auto;
+}
+
+.Keyboard-row {
+  display: flex;
+  width: 100%;
+}
+
+/* .keyboard-row > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 55px;
+  background-color: #818384;
+  border-radius: 0.25rem;
+  margin: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+} */
+.Key-module_key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 58px;
+  background-color: #818384;
+  border-radius: 0.25rem;
+  margin: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Key-module_green {
+  background-color: #548d4e;
+}
+
+.Key-module_yellow {
+  background-color: #b59f3a;
+}
+
+.Key-module_grey {
+  background-color: #3a3a3c;
+}
+
+.Key-module_oneAndHalf {
+  flex: 1.5;
+  font-size: 0.7rem;
+}
+
+.Key-module_half {
+  flex: 0.5;
+}

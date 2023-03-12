@@ -1,0 +1,63 @@
+.App-module__wordle {
+  min-width: 700px;
+}
+
+.Button-suffle {
+  border-radius: 8px;
+  margin: 2rem 0;
+  border: 1px solid transparent;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.Button-suffle:hover {
+  border-color: #646cff;
+}
+.Button-suffle:focus,
+.Button-suffle:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.Cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0.5rem;
+  width: 700px;
+}
+
+.Card-module_card {
+  width: 160px;
+  height: 160px;
+  margin-right: 0.5rem;
+  position: relative;
+  border: 2px solid #ffca28;
+  border-radius: 7px;
+}
+
+.Card-module_card img {
+  width: 160px;
+  height: 160px;
+}
+
+.Card-module_card .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+.Card-module_flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+.Card-module_card .back {
+  transform: rotateY(0deg);
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+.Card-module_flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
